@@ -1,0 +1,11 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resourceType": "Encounter",
+      "foo": "bar"
+    }
+  ]
+}

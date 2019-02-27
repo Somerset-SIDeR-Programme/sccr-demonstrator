@@ -1,0 +1,9 @@
+{
+  "service": {
+    "name": "SIDeR SCR demo api",
+    "port": 3000
+  },
+  "logging": {
+    "level": "info"
+  }
+}

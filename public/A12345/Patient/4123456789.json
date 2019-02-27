@@ -1,0 +1,16 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resourceType": "Patient",
+      "identifier": [
+        {
+          "value": "4123456789",
+          "system": "https://fhir.nhs.uk/Id/nhs-number"
+        }
+      ]
+    }
+  ]
+}
