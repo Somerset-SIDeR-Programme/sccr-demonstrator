@@ -1,0 +1,61 @@
+{
+  "resourceType": "Bundle",
+  "id": "7be2c024-b8b3-4c49-85bd-9abb408ca4d2",
+  "meta": {
+    "lastUpdated": "2019-03-15T13:52:14.348+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://data.developer.nhs.uk/ccri-fhir/STU3/AllergyIntolerance?patient=1094"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://data.developer.nhs.uk/ccri/fhir/STU3/AllergyIntolerance/31",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "31",
+        "meta": {
+          "lastUpdated": "2018-09-14T08:39:59.049+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter",
+            "valueReference": {
+              "reference": "Encounter/327"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.leedsth.nhs.uk/Id/allergy",
+            "value": "100029"
+          }
+        ],
+        "clinicalStatus": "active",
+        "verificationStatus": "unconfirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "102263004",
+              "display": "Eggs"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/1094",
+          "display": "Miss Rochelle Ryan"
+        },
+        "onsetDateTime": "1996-01-01T00:00:00+00:00",
+        "assertedDate": "2017-10-18T00:00:00+00:00"
+      }
+    }
+  ]
+}

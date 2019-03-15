@@ -1,0 +1,88 @@
+{
+  "resourceType": "Bundle",
+  "id": "60e5ee16-86d3-4225-a60d-8284f0824a93",
+  "meta": {
+    "lastUpdated": "2019-03-15T13:50:21.337+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://data.developer.nhs.uk/ccri-fhir/STU3/MedicationStatement?patient=1094"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://data.developer.nhs.uk/ccri/fhir/STU3/MedicationStatement/8",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8",
+        "meta": {
+          "lastUpdated": "2019-01-21T14:21:34.600+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.leedsth.nhs.uk/Id/statement",
+            "value": "4294967304"
+          }
+        ],
+        "context": {
+          "reference": "Encounter/327"
+        },
+        "status": "intended",
+        "medicationReference": {
+          "reference": "Medication/3"
+        },
+        "effectiveDateTime": "2017-10-18T00:00:00+00:00",
+        "dateAsserted": "2019-01-21T14:21:34+00:00",
+        "subject": {
+          "reference": "Patient/1094"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 or 2 puffs - as required",
+            "additionalInstruction": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "1871000175100",
+                    "display": "Four times daily as required"
+                  }
+                ]
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394899003",
+                  "display": "Oral administration of treatment"
+                }
+              ]
+            },
+            "doseRange": {
+              "low": {
+                "value": 1,
+                "unit": "Puff",
+                "system": "http://snomed.info/sct",
+                "code": "415215001"
+              },
+              "high": {
+                "value": 2,
+                "unit": "Puff",
+                "system": "http://snomed.info/sct",
+                "code": "415215001"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

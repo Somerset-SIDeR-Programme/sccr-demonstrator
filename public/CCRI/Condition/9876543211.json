@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "id": "1900e7ac-d233-4c58-bd94-5ad09973cf7f",
+  "meta": {
+    "lastUpdated": "2019-03-15T13:53:37.372+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://data.developer.nhs.uk/ccri-fhir/STU3/Condition?patient=1094"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://data.developer.nhs.uk/ccri/fhir/STU3/Condition/44",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "44",
+        "meta": {
+          "lastUpdated": "2018-09-14T08:39:54.420+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.leedsth.nhs.uk/Id/condition",
+            "value": "10042"
+          }
+        ],
+        "clinicalStatus": "remission",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "195967001",
+              "display": "Asthma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1094",
+          "display": "Miss Rochelle Ryan"
+        },
+        "context": {
+          "reference": "Encounter/327"
+        },
+        "assertedDate": "2017-10-18T00:00:00+00:00"
+      }
+    }
+  ]
+}

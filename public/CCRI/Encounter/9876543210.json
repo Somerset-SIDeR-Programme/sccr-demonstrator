@@ -1,0 +1,15 @@
+{
+  "resourceType": "Bundle",
+  "id": "8ce56266-a4a0-4223-b532-2d01f70e6a31",
+  "meta": {
+    "lastUpdated": "2019-03-15T13:45:23.042+00:00"
+  },
+  "type": "searchset",
+  "total": 0,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://data.developer.nhs.uk/ccri-fhir/STU3/Encounter?patient=1"
+    }
+  ]
+}
