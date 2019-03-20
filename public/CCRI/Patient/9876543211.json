@@ -1,91 +1,100 @@
 {
-  "resourceType": "Patient",
-  "id": "1094",
-  "meta": {
-    "lastUpdated": "2018-09-14T08:36:54.091+00:00",
-    "profile": [
-      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
-    ]
-  },
-  "extension": [
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
     {
-      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
-      "valueCodeableConcept": {
-        "coding": [
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1094",
+        "meta": {
+          "lastUpdated": "2018-09-14T08:36:54.091+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "extension": [
           {
-            "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
-            "code": "A",
-            "display": "British, Mixed British"
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+                  "code": "A",
+                  "display": "British, Mixed British"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9876543211"
+          },
+          {
+            "system": "https://fhir.leedsth.nhs.uk/Id/pas-number",
+            "value": "LOCAL1094"
+          },
+          {
+            "system": "https://fhir.leedsth.nhs.uk/Id/PPMIdentifier",
+            "value": "1094"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Ryan",
+            "given": [
+              "Rochelle"
+            ],
+            "prefix": [
+              "Miss"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(0113) 615 2646",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "RocRyan@situal.org",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-04-25",
+        "address": [
+          {
+            "use": "home",
+            "type": "both",
+            "line": [
+              "29 Asket Avenue"
+            ],
+            "city": "Leeds",
+            "district": "West Yorkshire",
+            "postalCode": "LS14 1JF"
           }
         ]
       }
-    }
-  ],
-  "identifier": [
-    {
-      "extension": [
-        {
-          "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
-                "code": "01",
-                "display": "Number present and verified"
-              }
-            ]
-          }
-        }
-      ],
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9876543211"
-    },
-    {
-      "system": "https://fhir.leedsth.nhs.uk/Id/pas-number",
-      "value": "LOCAL1094"
-    },
-    {
-      "system": "https://fhir.leedsth.nhs.uk/Id/PPMIdentifier",
-      "value": "1094"
-    }
-  ],
-  "active": true,
-  "name": [
-    {
-      "use": "official",
-      "family": "Ryan",
-      "given": [
-        "Rochelle"
-      ],
-      "prefix": [
-        "Miss"
-      ]
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "(0113) 615 2646",
-      "use": "home"
-    },
-    {
-      "system": "email",
-      "value": "RocRyan@situal.org",
-      "use": "home"
-    }
-  ],
-  "gender": "female",
-  "birthDate": "1974-04-25",
-  "address": [
-    {
-      "use": "home",
-      "type": "both",
-      "line": [
-        "29 Asket Avenue"
-      ],
-      "city": "Leeds",
-      "district": "West Yorkshire",
-      "postalCode": "LS14 1JF"
     }
   ]
 }

@@ -4,8 +4,10 @@
   "total": 1,
   "entry": [
     {
-      "resourceType": "Encounter",
-      "foo": "bar"
+      "resource": {
+        "resourceType": "Encounter",
+        "foo": "bar"
+      }
     }
   ]
 }
