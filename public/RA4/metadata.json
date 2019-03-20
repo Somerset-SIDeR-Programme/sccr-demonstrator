@@ -1,0 +1,109 @@
+{
+  "resourceType": "CapabilityStatement",
+  "status": "active",
+  "experimental": true,
+  "publisher": "Black Pear Software Limited",
+  "date": "2016-09-15",
+  "kind": "instance",
+  "description": "FHIR interface to SIDeR CareConnect services",
+  "copyright": "© 2016+ Black Pear Software Limited",
+  "software": {
+    "name": "sccr-demonstrator",
+    "version": "0.0.1"
+  },
+  "implementation": {
+    "description": "Yeovil District Hospital test data"
+  },
+  "fhirVersion": "3.0.1-11917",
+  "acceptUnknown": false,
+  "format": [
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Patient",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "no-version",
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A patient identifier. The system must be specified and must be NHS Number (https://fhir.nhs.uk/Id/nhs-number)."
+            }
+          ]
+        },
+        {
+          "type": "Encounter",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "no-version",
+          "searchParam": [
+            {
+              "name": "patient.identifier",
+              "type": "token",
+              "documentation": "A patient identifier. The system must be specified and must be NHS Number (https://fhir.nhs.uk/Id/nhs-number)."
+            }
+          ]
+        },
+        {
+          "type": "MedicationStatement",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "no-version",
+          "searchParam": [
+            {
+              "name": "patient.identifier",
+              "type": "token",
+              "documentation": "A patient identifier. The system must be specified and must be NHS Number (https://fhir.nhs.uk/Id/nhs-number)."
+            }
+          ]
+        },
+        {
+          "type": "AllergyIntolerance",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "no-version",
+          "searchParam": [
+            {
+              "name": "patient.identifier",
+              "type": "token",
+              "documentation": "A patient identifier. The system must be specified and must be NHS Number (https://fhir.nhs.uk/Id/nhs-number)."
+            }
+          ]
+        },
+        {
+          "type": "Condition",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "no-version",
+          "searchParam": [
+            {
+              "name": "patient.identifier",
+              "type": "token",
+              "documentation": "A patient identifier. The system must be specified and must be NHS Number (https://fhir.nhs.uk/Id/nhs-number)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

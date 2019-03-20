@@ -1,0 +1,68 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1",
+        "meta": {
+          "lastUpdated": "2018-12-06T13:43:58.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Chronic obstructive lung disease (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        },
+        "assertedDate": "2018-11-29T14:16:55+00:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "2",
+        "meta": {
+          "lastUpdated": "2018-12-06T13:43:58.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "resolved",
+        "note": {
+          "text": "Rupture of appendix (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3",
+        "meta": {
+          "lastUpdated": "2018-12-06T13:43:58.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "resolved",
+        "note": {
+          "text": "Fracture of radius AND ulna (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        }
+      }
+    }
+  ]
+}

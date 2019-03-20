@@ -1,0 +1,387 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 10,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "11",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/8"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one in the morning"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "8",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Furosemide 20mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "12",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/9"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one in the morning"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "9",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Lisinopril 10mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "13",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/3"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one in the morning"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "3",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Aspirin 75mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "14",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/10"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one daily"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "10",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Omeprazole 20mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "15",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/11"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one daily"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "11",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Atorvastatin 20mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "16",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/12"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one daily"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "12",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Bisoprolol 10mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "17",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/13"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one twice daily"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "13",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Metformin 500mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "18",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/14"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "one daily"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "14",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Thyroxine 100mcg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "19",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/15"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "use as directed"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "15",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Coloplast Assura maxi"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "20",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/16"
+        },
+        "subject": {
+          "reference": "Patient/9449303789"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "once daily"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "16",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Sitagliptin 50mg tablets"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

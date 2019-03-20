@@ -1,0 +1,287 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Diabetes mellitus (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Heart disease (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "22",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Chronic kidney disease stage 2 (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Congestive heart failure (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "10",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Peripheral vascular disease (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "11",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Sliding hiatus hernia (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "12",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Pressure ulcer (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "13",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Diverticular disease (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "14",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Hypothyroidism (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "15",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "active",
+        "note": {
+          "text": "Mild cognitive disorder (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "16",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "resolved",
+        "note": {
+          "text": "Myocardial infarction (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "17",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "inactive",
+        "note": {
+          "text": "Postpartum depression (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "18",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "resolved",
+        "note": {
+          "text": "Pneumonia (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "19",
+        "meta": {
+          "lastUpdated": "2019-03-18T10:50:01.403+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "clinicalStatus": "remission",
+        "note": {
+          "text": "Malignant neoplasm of colon (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/9449303789",
+          "display": "Ms Margeret RHYS"
+        }
+      }
+    }
+  ]
+}

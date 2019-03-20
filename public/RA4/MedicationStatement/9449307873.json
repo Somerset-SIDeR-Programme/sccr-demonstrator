@@ -1,0 +1,121 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 3,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/1"
+        },
+        "subject": {
+          "reference": "Patient/9449307873"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "2puffs qds as required – max 8 puffs in 24hours"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "1",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Salbutamol Inhaler"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "9",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/17"
+        },
+        "subject": {
+          "reference": "Patient/9449307873"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "1 four times daily if developing chest infection"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "17",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Ciprofloxacin 500mg tablets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "10",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/18"
+        },
+        "subject": {
+          "reference": "Patient/9449307873"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "2 capsules with breakfast and snacks, 4 with main meals"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "18",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Creon 25000 Capsules"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

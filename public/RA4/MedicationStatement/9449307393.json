@@ -1,0 +1,82 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource": {    "resourceType": "MedicationStatement",
+        "id": "1",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/1"
+        },
+        "subject": {
+          "reference": "Patient/9449307393"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "2puffs as required – max 8 puffs in 24hours"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "1",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Salbutamol Inhaler"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2",
+        "meta": {
+          "lastUpdated": "2019-03-12T14:14:33.809+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/2",
+        },
+        "subject": {
+          "reference": "Patient/9449307393"
+        },
+        "taken": "unk",
+        "note": {
+          "text": "1 puff od"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "2",
+            "meta": {
+              "lastUpdated": "2018-09-23T08:52:11.525+00:00",
+              "profile": [
+                "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+              ]
+            },
+            "note": {
+              "text": "Braltus Inhaler"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

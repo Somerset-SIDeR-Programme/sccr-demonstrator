@@ -1,0 +1,103 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1",
+        "meta": {
+          "lastUpdated": "2018-08-04T16:30:00+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "440655000",
+                "display": "Outpatient environment"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        },
+        "period": {
+          "start": "2018-08-04T16:00:00+00:00",
+          "end": "2018-08-04T16:30:00+00:00"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "2",
+        "meta": {
+          "lastUpdated": "2019-02-22T09:23:05+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "225728007",
+                "display": "Accident and Emergency department"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        },
+        "period": {
+          "start": "2019-02-22T05:54:54+00:00",
+          "end": "2019-02-22T09:23:05+00:00"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "3",
+        "meta": {
+          "lastUpdated": "2019-02-27T23:54:27+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394778007",
+                "display": "Inpatient environment"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        },
+        "period": {
+          "start": "2019-02-27T08:13:27+00:00",
+          "end": "2019-02-27T23:54:27+00:00"
+        }
+      }
+    }
+  ]
+}

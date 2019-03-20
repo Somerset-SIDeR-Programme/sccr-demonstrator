@@ -1,0 +1,30 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource":{
+        "resourceType": "AllergyIntolerance",
+        "id": "1",
+        "meta": {
+          "lastUpdated": "2018-09-14T08:39:57.876+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"
+          ]
+        },
+        "clinicalStatus": "inactive",
+        "verificationStatus": "confirmed",
+        "note": {
+          "text": "No Known Allergies"
+        },
+        "patient": {
+          "reference": "Patient/9449307393",
+          "display": "Mr Hubert MCANUFF"
+        },
+        "assertedDate": "2017-10-18T00:00:00+00:00"
+      }
+    }
+  ]
+}
+

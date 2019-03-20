@@ -1,0 +1,71 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9449307393",
+        "meta": {
+          "lastUpdated": "2019-03-13T05:45:29.084+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449307393"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "MCANUFF",
+            "given": [
+              "Hubert"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1956-03-31",
+        "address": [
+          {
+            "use": "home",
+            "type": "both",
+            "line": [
+              "Elvedon Court",
+              "Epsom Road"
+            ],
+            "city": "Leatherhead",
+            "district": "Surrey",
+            "postalCode": "KT22 8TD"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/H81109",
+          "display": "SIDeR Test Practice"
+        }
+      }
+    }
+  ]
+}
