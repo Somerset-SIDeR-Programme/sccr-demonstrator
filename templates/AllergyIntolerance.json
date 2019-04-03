@@ -13,8 +13,7 @@
         "code": "{{SCT_CODE}}",
         "display": "{{SCT_RUBRIC}}"
       }
-    ],
-    "text": "this be what we know"
+    ]
   },
   "patient": {
     "identifier": {
