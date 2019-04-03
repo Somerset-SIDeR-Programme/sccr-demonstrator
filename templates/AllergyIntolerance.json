@@ -1,0 +1,29 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"
+    ]
+  },
+  "verificationStatus": "{{unconfirmed | confirmed}}",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "{{SCT_CODE}}",
+        "display": "{{SCT_RUBRIC}}"
+      }
+    ],
+    "text": "this be what we know"
+  },
+  "patient": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "{{NHSNUMBER}}"
+    }
+  },
+  "assertedDate": "{{DATE}}"
+}
+
+
+

@@ -1,0 +1,42 @@
+{
+  "resourceType": "MedicationStatement",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+    ]
+  },
+  "status": "{{ active | completed | entered-in-error | intended | stopped | on-hold }}",
+  "medicationReference": {
+    "reference": "#m1"
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "{{NHSNUMBER}}"
+    }
+  },
+  "taken": "{{ y | n | unk | na }}",
+  "dosage": {
+    "text": "{{DOSAGE_TEXT}}"
+  },
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "m1",
+      "meta": {
+        "profile": [
+          "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "{{SCT_CODE}}",
+            "display": "{{SCT_RUBRIC}}"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "DocumentReference",
+  "meta": {
+    "profile": []
+  },
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "{{SCT_CODE}}",
+        "display": "{{SCT_RUBRIC}}"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "{{NHSNUMBER}}"
+    }
+  },
+  "created": "{{DATE}}",
+  "indexed": "{{DATE}}",
+  "content": [
+    {
+      "attachment": {
+        "title": "{{TITLE}}"
+      }
+    }
+  ]
+}

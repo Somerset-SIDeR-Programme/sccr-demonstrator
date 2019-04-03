@@ -1,0 +1,25 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+    ]
+  },
+  "clinicalStatus": "{{ active | recurrence | inactive | remission | resolved }}",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "{{SCT_CODE}}",
+        "display": "{{SCT_RUBRIC}}"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "{{NHSNUMBER}}"
+    }
+  },
+  "assertedDate": "{{DATE}}"
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Encounter",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+    ]
+  },
+  "status": "{{ planned	| arrived | triaged	| in-progress | onleave	| finished | cancelled | entered-in-error |	unknown }}",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "{{SCT_CODE}}",
+          "display": "{{SCT_RUBRIC}}"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "{{NHSNUMBER}}"
+    }
+  },
+  "period": {
+    "start": "{{START_DATE}}",
+    "end": "{{END_DATE}}"
+  }
+}
+
