@@ -16,9 +16,11 @@
     }
   },
   "taken": "{{ y | n | unk | na }}",
-  "dosage": {
-    "text": "{{DOSAGE_TEXT}}"
-  },
+  "dosage": [
+    {
+      "text": "{{DOSAGE_TEXT}}"
+    }
+  ],
   "contained": [
     {
       "resourceType": "Medication",
