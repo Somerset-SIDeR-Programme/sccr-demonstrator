@@ -52,7 +52,7 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/2",
+          "reference": "Medication/2"
         },
         "subject": {
           "reference": "Patient/9449307393"

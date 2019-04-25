@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "065f97db-8899-4e90-921a-de377ec8b574",
+		"name": "SIDeR SCR Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search Patient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/{{odsCode}}/fhir/Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"{{odsCode}}",
+						"fhir",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}"
+						}
+					]
+				},
+				"description": "Search for Patient resources held by organisation and matching NHS number"
+			},
+			"response": []
+		},
+		{
+			"name": "search AllergyIntolerance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/{{odsCode}}/fhir/AllergyIntolerance?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"{{odsCode}}",
+						"fhir",
+						"AllergyIntolerance"
+					],
+					"query": [
+						{
+							"key": "patient.identifier",
+							"value": "https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}"
+						}
+					]
+				},
+				"description": "Search for AllergyIntolerance resources held by organisation relating to an NHS number"
+			},
+			"response": []
+		},
+		{
+			"name": "search Condition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/{{odsCode}}/fhir/Condition?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"{{odsCode}}",
+						"fhir",
+						"Condition"
+					],
+					"query": [
+						{
+							"key": "patient.identifier",
+							"value": "https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}"
+						}
+					]
+				},
+				"description": "Search for Condition resources held by organisation relating to an NHS number"
+			},
+			"response": []
+		},
+		{
+			"name": "search Encounter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/{{odsCode}}/fhir/Encounter?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"{{odsCode}}",
+						"fhir",
+						"Encounter"
+					],
+					"query": [
+						{
+							"key": "patient.identifier",
+							"value": "https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}"
+						}
+					]
+				},
+				"description": "Search for Encounter resources held by organisation relating to an NHS number"
+			},
+			"response": []
+		},
+		{
+			"name": "search MedicationStatement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/{{odsCode}}/fhir/MedicationStatement?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"{{odsCode}}",
+						"fhir",
+						"MedicationStatement"
+					],
+					"query": [
+						{
+							"key": "patient.identifier",
+							"value": "https://fhir.nhs.uk/Id/nhs-number|{{nhsNumber}}"
+						}
+					]
+				},
+				"description": "Search for MedicationStatement resources held by organisation relating to an NHS number"
+			},
+			"response": []
+		}
+	]
+}
