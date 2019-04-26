@@ -1,0 +1,24 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "c4934517-3dea-488f-9358-87da5ae7705e",
+  "clinicalStatus": "active",
+  "verificationStatus": "unconfirmed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "716186003",
+        "display": "No Known Allergy (situation)"
+      }
+    ],
+    "text": "NKA"
+  },
+  "patient": {
+    "reference": "Patient/9449303789-1",
+    "display": "Ms Margaret  RHYS"
+  },
+  "assertedDate": "2018-12-06T15:37:31-06:00",
+  "recorder": {
+    "reference": "Practitioner/G8539065"
+  }
+}
