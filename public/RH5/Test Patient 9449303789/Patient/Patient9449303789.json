@@ -1,0 +1,98 @@
+﻿{
+  "resourceType": "Bundle",
+  "id": "f9263dd8-2563-408f-9f13-356d3dad2846",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/Patient/9449310106-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9304becb-b861-4983-b018-7adc52ecba28",
+        "meta": {
+          "lastUpdated": "2019-04-16T11:52:26.055+00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+                  "code": "CY",
+                  "display": "Other white European, European unspecified, European mixed"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Rhys",
+            "given": [
+              "Margaret"
+            ],
+            "prefix": [
+              "Ms"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+441234567890",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1936-10-13",
+        "address": [
+          {
+            "use": "home",
+            "text": "25 Imber Close, Esher, Surrey, KT10 8ED",
+            "line": [
+              "25 Imber Close"
+            ],
+            "city": "Esher",
+            "district": "Surrey",
+            "postalCode": "KT10 8ED"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "Practitioner/G8539065",
+            "display": "Dr. S Ibbett"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/H81109",
+          "display": "Capelfield Surgery"
+        }
+      }
+    }
+  ]
+}
