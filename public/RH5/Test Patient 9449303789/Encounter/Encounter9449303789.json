@@ -1,0 +1,77 @@
+{
+  "resourceType": "Bundle",
+  "id": "de82a101-9289-4423-b1df-da1be0147d8a",
+  "meta": {
+    "lastUpdated": "2019-04-17T12:23:30+11:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/encounter/9449303789-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "id": "7bb06961-21ec-4279-beae-94ecd3cd0616",
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "270427003",
+                "display": "Patient-initiated encounter"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "participant": [
+          {
+            "individual": {
+              "display": "Tissue Viability Service Nurse"
+            }
+          }
+        ],
+        "location": [
+          {
+
+            "location": {
+              "display": "client's home"
+            }
+          }
+        ],
+            "reason": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "225358003",
+                    "display": "Wound Care due to Diabetes"
+                  }
+                ]
+              }
+            ],
+            "period": {
+              "start": "2018-06-04",
+              "end": "2018-06-04"
+            },
+            "serviceProvider": {
+              "reference": "Organization/RH500",
+              "display": "Somerset Patnership NHS Foundation Trust"
+            }
+          }
+      }
+  ]
+}
