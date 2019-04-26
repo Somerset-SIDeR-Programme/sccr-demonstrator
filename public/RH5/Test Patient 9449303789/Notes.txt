@@ -1,0 +1,6 @@
+Notes on test Json files
+
+Files with a hyphen followed by a number e.g. Condition9449303789-1.json are the individual resource
+Files with just the nhs number e.g. Condition9449303789.json is the Bundle for the individual resources
+
+In the bundle files i have put a url link back to the individual resource files, though not sure this is needed
