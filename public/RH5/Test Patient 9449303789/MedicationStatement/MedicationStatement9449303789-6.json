@@ -1,0 +1,64 @@
+{
+  "resourceType": "MedicationStatement",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+    ]
+  },
+  "id": "983a788a-4ebd-4748-8a9e-b5858abcf203",
+  "status": "active",
+  "medicationCodeableConcept": {
+    "text": "Bisoprolol"
+  },
+  "subject": {
+    "reference": "Patient/9449303789-1",
+    "display": "Margaret Rhys",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449303789"
+    }
+  },
+  "reasonReference": [
+    {
+      "reference": "test"
+    }
+  ],
+  "note": [
+    {
+      "text": "Bisoprolol 10mg one daily"
+    }
+  ],
+  "taken": "y",
+  "dosage": [
+    {
+      "sequence": 1,
+      "text": "One daily",
+      "asNeededBoolean": false,
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "260548002",
+            "display": "Oral"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 10,
+        "unit": "mg",
+        "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+        "code": "mg"
+      },
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 1
+        },
+        "denominator": {
+          "value": 1,
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      }
+    }
+  ]
+}

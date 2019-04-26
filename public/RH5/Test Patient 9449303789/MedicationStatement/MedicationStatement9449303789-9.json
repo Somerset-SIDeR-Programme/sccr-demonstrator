@@ -1,0 +1,32 @@
+{
+  "resourceType": "MedicationStatement",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+    ]
+  },
+  "id": "1aa6108d-7e2f-45cc-b223-15a75915a2fe",
+  "status": "active",
+  "medicationCodeableConcept": {
+    "text": "Coloplast Assura maxi"
+  },
+  "subject": {
+    "reference": "Patient/9449303789-1",
+    "display": "Margaret Rhys",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449303789"
+    }
+  },
+  "reasonReference": [
+    {
+      "reference": "test"
+    }
+  ],
+  "note": [
+    {
+      "text": "Coloplast Assura maxi use as directed"
+    }
+  ],
+  "taken": "y"
+}

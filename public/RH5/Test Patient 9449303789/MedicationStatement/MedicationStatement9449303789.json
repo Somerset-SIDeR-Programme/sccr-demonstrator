@@ -1,0 +1,659 @@
+{
+  "resourceType": "Bundle",
+  "id": "3649fb4b-b741-4bc7-a53d-b9dba893b25f",
+  "type": "searchset",
+  "total": 10,
+
+  "entry": [
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"
+          ]
+        },
+        "id": "1aa4c6ad-fa0c-4169-83d2-49dd3a2dde33",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Furosemide"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Furosemide 20mg one in the morning"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One in the morning",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 20,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "a71b1125-d026-42b4-ab86-eb0a0129b381",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Lisinopril"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Lisinopril 10mg one in the morning"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One in the morning",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 10,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-3",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "608d8754-9567-4cda-858b-1439637eb883",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Aspirin"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Aspirin 75mg one in the morning"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One in the morning",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 75,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-4",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "284b05e7-88d7-4e1f-80af-b89ac55e98f3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Omeprazole"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Omeprazole 20mg one daily"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One daily",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 20,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-5",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "d6518d6c-5d9e-4c82-9685-cd6a7cb882a9",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Atorvastatin 20mg one daily"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One daily",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 20,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-6",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "983a788a-4ebd-4748-8a9e-b5858abcf203",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Bisoprolol"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Bisoprolol 10mg one daily"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One daily",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 10,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-7",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "c2b107a4-7087-457a-8d21-1bfd47b5f855",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Metformin"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Metformin 500mg once twice daily"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "Once twice daily",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 500,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-8",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "93e98c3d-c114-4f18-aa48-4e1e8b638189",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Thyroxine"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Thyroxine 100mcg one daily"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "One daily",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 100,
+              "unit": "mcg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mcg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-9",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "1aa6108d-7e2f-45cc-b223-15a75915a2fe",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Coloplast Assura maxi"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Coloplast Assura maxi use as directed"
+          }
+        ],
+        "taken": "y"
+      }
+
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/MedicationStatement/9449303789-10",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-2"
+          ]
+        },
+        "id": "b44e62df-b1dc-4e11-9aca-b620c12825e2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Sitagliptin"
+        },
+        "subject": {
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "test"
+          }
+        ],
+        "note": [
+          {
+            "text": "Sitagliptin 50mg once daily"
+          }
+        ],
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "Once daily",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 50,
+              "unit": "mg",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "mg"
+            },
+            "maxDosePerPeriod": {
+              "numerator": {
+                "value": 1
+              },
+              "denominator": {
+                "value": 1,
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          }
+        ]
+      }
+
+    }
+  ]
+}
+
+
+
