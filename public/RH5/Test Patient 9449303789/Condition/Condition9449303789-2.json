@@ -1,0 +1,45 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+    ]
+  },
+  "id": "296a882e-3550-4705-a026-9ad27300227c",
+  "clinicalStatus": "active",
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24484000",
+        "display": "Severe"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "49601007",
+        "display": "Disorder of cardiovascular system"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449303789"
+    },
+    "reference": "Patient/9449303789-1",
+    "display": "Margaret Rhys"
+  },
+  "assertedDate": "2016-09-11",
+  "asserter": {
+    "reference": "Practitioner/G8539065"
+  },
+  "note": [
+    {
+      "text": "The patient is suffering from Cardiovascular disease"
+    }
+  ]
+}

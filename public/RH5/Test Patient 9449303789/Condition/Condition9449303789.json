@@ -1,0 +1,537 @@
+{
+  "resourceType": "Bundle",
+  "id": "297fea0b-e323-4afa-bc50-cb5e56bc08a7",
+  "type": "searchset",
+  "total": 3,
+
+  "entry": [
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-1",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "fba63c99-aa1f-4d62-9b11-dc935d120fc3",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "Diabetes mellitus type 2"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2017-03-11",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Type II Diabetes"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-2",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "296a882e-3550-4705-a026-9ad27300227c",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "49601007",
+              "display": "Disorder of cardiovascular system"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2016-09-11",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Cardiovascular disease"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-3",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "f3c391a0-db8f-447c-bc2f-430de36ce304",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90734009",
+              "display": "Chronic"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "431856006",
+              "display": "Chronic kidney disease stage 2 (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2018-04-03",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Chronic Kidney Disease Stage 2"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-4",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "0e5dbf9e-dc21-4608-94b6-e22f2f711a3d",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84114007",
+              "display": "Heart failure (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2019-01-02",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Heart Failure"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-5",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "ffa21ab8-aa91-4c4b-9030-139ced67bc3a",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "925861000000102",
+              "display": "Severe frailty (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2018-08-22",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Severe frailty"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-6",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "dea271cd-2860-4e41-8f82-84e864b4f2ea",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "400047006",
+              "display": "Peripheral vascular disease (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2018-10-22",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Peripheral vascular disease"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-7",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "81c01b5f-fbbb-43f6-b91b-eb052c5de63c",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84089009",
+              "display": "Hiatal hernia (disorder) "
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2018-11-22",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Hiatus Hernia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-8",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "8a49c9d9-a304-40a0-afa3-9ba3c96fa214",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "237087004",
+              "display": "Trophic ulcer of uterine cervix (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2019-03-22",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Decubitus ulcer of cervix"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-9",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "22f43584-f1b3-4201-b89f-d7cd0661f4af",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "385432009",
+              "display": "Not applicable"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "339648008",
+              "display": "Colostomy bag (physical object) "
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2018-07-12",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient has a colostomy bag in place"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-10",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "b12db791-d8dc-4b7b-b431-6a3ccea92277",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "40930008",
+              "display": "Hypothyroidism"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2019-01-30",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient is suffering from Hypothyroidism"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/condition/9449303789-11",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+          ]
+        },
+        "id": "4bdafdec-4c8d-4ac1-8b04-a02f6f1926e5",
+        "clinicalStatus": "active",
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "192071009",
+              "display": "Mild memory disturbance"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "assertedDate": "2017-05-25",
+        "asserter": {
+          "reference": "Practitioner/G8539065"
+        },
+        "note": [
+          {
+            "text": "The patient suffers from Mild Memory Disturbance"
+          }
+        ]
+      }
+    }
+  ]
+}

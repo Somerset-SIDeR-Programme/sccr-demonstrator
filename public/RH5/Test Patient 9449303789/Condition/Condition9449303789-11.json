@@ -1,0 +1,45 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"
+    ]
+  },
+  "id": "4bdafdec-4c8d-4ac1-8b04-a02f6f1926e5",
+  "clinicalStatus": "active",
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24484000",
+        "display": "Severe"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "192071009",
+        "display": "Mild memory disturbance"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449303789"
+    },
+    "reference": "Patient/9449303789-1",
+    "display": "Margaret Rhys"
+  },
+  "assertedDate": "2017-05-25",
+  "asserter": {
+    "reference": "Practitioner/G8539065"
+  },
+  "note": [
+    {
+      "text": "The patient suffers from Mild Memory Disturbance"
+    }
+  ]
+}
