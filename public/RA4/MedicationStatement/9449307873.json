@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 3,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement?patient=9449307873"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement/8",
       "resource": {
         "resourceType": "MedicationStatement",
         "id": "8",
@@ -18,7 +25,7 @@
           "reference": "Medication/1"
         },
         "subject": {
-          "reference": "Patient/9449307873"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
         "note": {
@@ -42,6 +49,7 @@
       }
     },
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement/9",
       "resource": {
         "resourceType": "MedicationStatement",
         "id": "9",
@@ -56,7 +64,7 @@
           "reference": "Medication/17"
         },
         "subject": {
-          "reference": "Patient/9449307873"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
         "note": {
@@ -80,6 +88,7 @@
       }
     },
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement/10",
       "resource": {
         "resourceType": "MedicationStatement",
         "id": "10",
@@ -94,7 +103,7 @@
           "reference": "Medication/18"
         },
         "subject": {
-          "reference": "Patient/9449307873"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
         "note": {
