@@ -28,7 +28,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "2puffs as required – max 8 puffs in 24hours"
         },
         "contained": [
@@ -41,7 +41,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Salbutamol Inhaler"
             }
           }
@@ -67,7 +67,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "1 puff od"
         },
         "contained": [
@@ -80,7 +80,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Braltus Inhaler"
             }
           }

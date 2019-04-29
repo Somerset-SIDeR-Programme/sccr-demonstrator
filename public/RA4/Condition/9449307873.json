@@ -21,7 +21,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Cystic fibrosis (disorder)"
         },
         "subject": {

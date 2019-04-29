@@ -22,7 +22,7 @@
         },
         "clinicalStatus": "inactive",
         "verificationStatus": "confirmed",
-        "note": {
+        "code": {
           "text": "No Known Allergies"
         },
         "patient": {

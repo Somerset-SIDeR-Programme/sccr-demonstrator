@@ -21,7 +21,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Chronic obstructive lung disease (disorder)"
         },
         "subject": {
@@ -42,7 +42,7 @@
           ]
         },
         "clinicalStatus": "resolved",
-        "note": {
+        "code": {
           "text": "Rupture of appendix (disorder)"
         },
         "subject": {
@@ -62,7 +62,7 @@
           ]
         },
         "clinicalStatus": "resolved",
-        "note": {
+        "code": {
           "text": "Fracture of radius AND ulna (disorder)"
         },
         "subject": {

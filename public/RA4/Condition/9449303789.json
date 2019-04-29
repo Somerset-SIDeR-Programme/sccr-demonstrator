@@ -21,7 +21,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Diabetes mellitus (disorder)"
         },
         "subject": {
@@ -41,7 +41,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Heart disease (disorder)"
         },
         "subject": {
@@ -61,7 +61,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Chronic kidney disease stage 2 (disorder)"
         },
         "subject": {
@@ -81,7 +81,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Congestive heart failure (disorder)"
         },
         "subject": {
@@ -101,7 +101,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Peripheral vascular disease (disorder)"
         },
         "subject": {
@@ -121,7 +121,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Sliding hiatus hernia (disorder)"
         },
         "subject": {
@@ -141,7 +141,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Pressure ulcer (disorder)"
         },
         "subject": {
@@ -161,7 +161,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Diverticular disease (disorder)"
         },
         "subject": {
@@ -181,7 +181,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Hypothyroidism (disorder)"
         },
         "subject": {
@@ -201,7 +201,7 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Mild cognitive disorder (disorder)"
         },
         "subject": {
@@ -221,7 +221,7 @@
           ]
         },
         "clinicalStatus": "resolved",
-        "note": {
+        "code": {
           "text": "Myocardial infarction (disorder)"
         },
         "subject": {
@@ -241,7 +241,7 @@
           ]
         },
         "clinicalStatus": "inactive",
-        "note": {
+        "code": {
           "text": "Postpartum depression (disorder)"
         },
         "subject": {
@@ -261,7 +261,7 @@
           ]
         },
         "clinicalStatus": "resolved",
-        "note": {
+        "code": {
           "text": "Pneumonia (disorder)"
         },
         "subject": {
@@ -281,7 +281,7 @@
           ]
         },
         "clinicalStatus": "remission",
-        "note": {
+        "code": {
           "text": "Malignant neoplasm of colon (disorder)"
         },
         "subject": {

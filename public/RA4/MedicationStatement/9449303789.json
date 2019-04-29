@@ -28,7 +28,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one in the morning"
         },
         "contained": [
@@ -41,7 +41,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Furosemide 20mg tablets"
             }
           }
@@ -67,7 +67,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one in the morning"
         },
         "contained": [
@@ -80,7 +80,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Lisinopril 10mg tablets"
             }
           }
@@ -106,7 +106,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one in the morning"
         },
         "contained": [
@@ -119,7 +119,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Aspirin 75mg tablets"
             }
           }
@@ -145,7 +145,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one daily"
         },
         "contained": [
@@ -158,7 +158,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Omeprazole 20mg tablets"
             }
           }
@@ -184,7 +184,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one daily"
         },
         "contained": [
@@ -197,7 +197,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Atorvastatin 20mg tablets"
             }
           }
@@ -223,7 +223,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one daily"
         },
         "contained": [
@@ -236,7 +236,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Bisoprolol 10mg tablets"
             }
           }
@@ -262,7 +262,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one twice daily"
         },
         "contained": [
@@ -275,7 +275,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Metformin 500mg tablets"
             }
           }
@@ -301,7 +301,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "one daily"
         },
         "contained": [
@@ -314,7 +314,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Thyroxine 100mcg tablets"
             }
           }
@@ -340,7 +340,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "use as directed"
         },
         "contained": [
@@ -353,7 +353,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Coloplast Assura maxi"
             }
           }
@@ -379,7 +379,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "once daily"
         },
         "contained": [
@@ -392,7 +392,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Sitagliptin 50mg tablets"
             }
           }

@@ -28,7 +28,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "2puffs qds as required – max 8 puffs in 24hours"
         },
         "contained": [
@@ -41,7 +41,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Salbutamol Inhaler"
             }
           }
@@ -67,7 +67,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "1 four times daily if developing chest infection"
         },
         "contained": [
@@ -80,7 +80,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Ciprofloxacin 500mg tablets"
             }
           }
@@ -106,7 +106,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "note": {
+        "code": {
           "text": "2 capsules with breakfast and snacks, 4 with main meals"
         },
         "contained": [
@@ -119,7 +119,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Creon 25000 Capsules"
             }
           }
