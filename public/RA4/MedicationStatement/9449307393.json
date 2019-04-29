@@ -1,10 +1,18 @@
 {
   "resourceType": "Bundle",
   "type": "searchset",
-  "total": 1,
+  "total": 2,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement?patient=9449307393"
+    }
+  ],
   "entry": [
     {
-      "resource": {    "resourceType": "MedicationStatement",
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement/1",
+      "resource": {
+        "resourceType": "MedicationStatement",
         "id": "1",
         "meta": {
           "lastUpdated": "2019-03-12T14:14:33.809+00:00",
@@ -17,10 +25,10 @@
           "reference": "Medication/1"
         },
         "subject": {
-          "reference": "Patient/9449307393"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "note": {
+        "dosage": {
           "text": "2puffs as required – max 8 puffs in 24hours"
         },
         "contained": [
@@ -33,7 +41,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Salbutamol Inhaler"
             }
           }
@@ -41,6 +49,7 @@
       }
     },
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/MedicationStatement/2",
       "resource": {
         "resourceType": "MedicationStatement",
         "id": "2",
@@ -55,10 +64,10 @@
           "reference": "Medication/2"
         },
         "subject": {
-          "reference": "Patient/9449307393"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "note": {
+        "dosage": {
           "text": "1 puff od"
         },
         "contained": [
@@ -71,7 +80,7 @@
                 "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"
               ]
             },
-            "note": {
+            "code": {
               "text": "Braltus Inhaler"
             }
           }

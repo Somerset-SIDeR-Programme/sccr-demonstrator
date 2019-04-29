@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Condition?patient=9449307873"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Condition/6",
       "resource": {
         "resourceType": "Condition",
         "id": "6",
@@ -14,12 +21,11 @@
           ]
         },
         "clinicalStatus": "active",
-        "note": {
+        "code": {
           "text": "Cystic fibrosis (disorder)"
         },
         "subject": {
-          "reference": "Patient/9449307873",
-          "display": "Mr Meir LIEBERMAN"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         }
       }
     }

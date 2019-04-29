@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance?patient=9449307873"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance/3",
       "resource": {
         "resourceType": "AllergyIntolerance",
         "id": "3",
@@ -15,16 +22,14 @@
         },
         "clinicalStatus": "inactive",
         "verificationStatus": "confirmed",
-        "note": {
+        "code": {
           "text": "No Known Allergies"
         },
         "patient": {
-          "reference": "Patient/9449307873",
-          "display": "Mr Meir LIEBERMAN"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "assertedDate": "2017-10-18T00:00:00+00:00"
       }
     }
   ]
 }
-

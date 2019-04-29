@@ -1,16 +1,154 @@
 {
   "resourceType": "Bundle",
   "type": "searchset",
-  "total": 1,
+  "total": 4,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Encounter?patient=9449303789"
+    }
+  ],
   "entry": [
     {
-      "resource": {}
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-99999-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9999-99999-1",
+        "meta": {
+          "lastUpdated": "2018-07-25T10:46:08",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "440655000",
+                "display": "Outpatient environment"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394579002",
+                "display": "Cardiology"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/patient/9449303789"
+        },
+        "period": {
+          "start": "2018-07-25T10:31:08"
+        }
+      }
     },
     {
-      "resource": {}
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-9999-2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9999-9999-2",
+        "meta": {
+          "lastUpdated": "2018-10-24T13:30:49",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394778007",
+                "display": "Inpatient environment"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394579002",
+                "display": "Cardiology"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/patient/9449303789"
+        },
+        "period": {
+          "start": "2018-10-22T09:54:12",
+          "end": "2018-10-24T13:30:49"
+        }
+      }
     },
     {
-      "resource": {}
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-9999-3",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9999-9999-3",
+        "meta": {
+          "lastUpdated": "2019-02-24T16:00:27",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "225728007",
+                "display": "Accident and Emergency department"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/patient/9449303789"
+        },
+        "period": {
+          "start": "2019-02-22T08:30:00",
+          "end": "2019-02-22T10:09:53"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-99999-4",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9999-99999-4",
+        "meta": {
+          "lastUpdated": "2019-03-29T15:00:00",
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "440655000",
+                "display": "Outpatient environment"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394579002",
+                "display": "Cardiology"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/patient/9449303789"
+        },
+        "period": {
+          "start": "2019-03-29T14:30:00"
+        }
+      }
     }
   ]
 }

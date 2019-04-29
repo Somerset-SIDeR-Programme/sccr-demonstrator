@@ -1,12 +1,19 @@
 {
   "resourceType": "Bundle",
   "type": "searchset",
-  "total": 1,
+  "total": 3,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Encounter?patient=9449307393"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-9999-5",
       "resource": {
         "resourceType": "Encounter",
-        "id": "1",
+        "id": "9999-9999-5",
         "meta": {
           "lastUpdated": "2018-08-04T16:30:00+00:00",
           "profile": [
@@ -21,13 +28,17 @@
                 "system": "http://snomed.info/sct",
                 "code": "440655000",
                 "display": "Outpatient environment"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394612005",
+                "display": "Urology"
               }
             ]
           }
         ],
         "subject": {
-          "reference": "Patient/9449307393",
-          "display": "Mr Hubert MCANUFF"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "period": {
           "start": "2018-08-04T16:00:00+00:00",
@@ -36,9 +47,10 @@
       }
     },
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-9999-6",
       "resource": {
         "resourceType": "Encounter",
-        "id": "2",
+        "id": "9999-9999-6",
         "meta": {
           "lastUpdated": "2019-02-22T09:23:05+00:00",
           "profile": [
@@ -58,8 +70,7 @@
           }
         ],
         "subject": {
-          "reference": "Patient/9449307393",
-          "display": "Mr Hubert MCANUFF"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "period": {
           "start": "2019-02-22T05:54:54+00:00",
@@ -68,9 +79,10 @@
       }
     },
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Encounter/9999-9999-7",
       "resource": {
         "resourceType": "Encounter",
-        "id": "3",
+        "id": "9999-9999-7",
         "meta": {
           "lastUpdated": "2019-02-27T23:54:27+00:00",
           "profile": [
@@ -85,13 +97,17 @@
                 "system": "http://snomed.info/sct",
                 "code": "394778007",
                 "display": "Inpatient environment"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394612005",
+                "display": "Urology"
               }
             ]
           }
         ],
         "subject": {
-          "reference": "Patient/9449307393",
-          "display": "Mr Hubert MCANUFF"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "period": {
           "start": "2019-02-27T08:13:27+00:00",
