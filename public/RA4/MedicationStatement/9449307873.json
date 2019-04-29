@@ -28,7 +28,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "2puffs qds as required – max 8 puffs in 24hours"
         },
         "contained": [
@@ -67,7 +67,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "1 four times daily if developing chest infection"
         },
         "contained": [
@@ -106,7 +106,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "2 capsules with breakfast and snacks, 4 with main meals"
         },
         "contained": [

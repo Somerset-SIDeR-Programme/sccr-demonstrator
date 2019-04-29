@@ -28,7 +28,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one in the morning"
         },
         "contained": [
@@ -67,7 +67,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one in the morning"
         },
         "contained": [
@@ -106,7 +106,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one in the morning"
         },
         "contained": [
@@ -145,7 +145,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one daily"
         },
         "contained": [
@@ -184,7 +184,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one daily"
         },
         "contained": [
@@ -223,7 +223,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one daily"
         },
         "contained": [
@@ -262,7 +262,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one twice daily"
         },
         "contained": [
@@ -301,7 +301,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "one daily"
         },
         "contained": [
@@ -340,7 +340,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "use as directed"
         },
         "contained": [
@@ -379,7 +379,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "once daily"
         },
         "contained": [

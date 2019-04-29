@@ -28,7 +28,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "2puffs as required – max 8 puffs in 24hours"
         },
         "contained": [
@@ -67,7 +67,7 @@
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "code": {
+        "dosage": {
           "text": "1 puff od"
         },
         "contained": [
