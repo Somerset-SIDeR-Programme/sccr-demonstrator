@@ -57,6 +57,7 @@
         },
         "status": "finished",
         "class": {
+          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
           "code": "EMER",          
           "display": "emergency"
         },
@@ -93,6 +94,7 @@
         },
         "status": "finished",
         "class": {
+          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
           "code": "IMP",
           "display": "inpatient"
         },
