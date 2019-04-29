@@ -1,10 +1,11 @@
 {
   "resourceType": "Bundle",
   "type": "searchset",
-  "total": 1,
-  "entry": [
+  "total": 0,
+  "link": [
     {
-      "resource": {}
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance?patient=9449310106"
     }
   ]
 }

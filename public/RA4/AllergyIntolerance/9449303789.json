@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance?patient=9449303789"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance/4",
       "resource": {
         "resourceType": "AllergyIntolerance",
         "id": "4",
@@ -19,8 +26,7 @@
           "text": "No Known Allergies"
         },
         "patient": {
-          "reference": "Patient/9449303789",
-          "display": "Ms Margeret RHYS"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "assertedDate": "2017-10-18T00:00:00+00:00"
       }

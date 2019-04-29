@@ -2,9 +2,16 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance?patient=9449307393"
+    }
+  ],
   "entry": [
     {
-      "resource":{
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/AllergyIntolerance/1",
+      "resource": {
         "resourceType": "AllergyIntolerance",
         "id": "1",
         "meta": {
@@ -19,12 +26,10 @@
           "text": "No Known Allergies"
         },
         "patient": {
-          "reference": "Patient/9449307393",
-          "display": "Mr Hubert MCANUFF"
+          "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "assertedDate": "2017-10-18T00:00:00+00:00"
       }
     }
   ]
 }
-
