@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Patient?identifier=9449307393"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393",
       "resource": {
         "resourceType": "Patient",
         "id": "9449307393",
@@ -13,7 +20,31 @@
             "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
           ]
         },
+        "language": "English (Great Britain)",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Mr Hubert <b>MCANUFF </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>999999992</td></tr><tr><td>Address</td><td><span>Elvedon Court </span><br/><span>Epsom Road </span><br/><span>Leatherhead </span></td></tr><tr><td>Date of birth</td><td><span>31 March 1936</span></td></tr></tbody></table></div>"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+                  "code": "99",
+                  "display": "Not Known"
+                }
+              ]
+            }
+          }
+        ],
         "identifier": [
+          {
+            "use": "usual",
+            "system": "https://fhir.nhs.uk/Id/local-patient-identifier",
+            "value": "999999992"
+          },
           {
             "extension": [
               {
@@ -29,6 +60,7 @@
                 }
               }
             ],
+            "use": "official",
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449307393"
           }
@@ -48,6 +80,7 @@
         ],
         "gender": "male",
         "birthDate": "1956-03-31",
+        "deceasedBoolean": false,
         "address": [
           {
             "use": "home",
@@ -60,11 +93,7 @@
             "district": "Surrey",
             "postalCode": "KT22 8TD"
           }
-        ],
-        "managingOrganization": {
-          "reference": "Organization/H81109",
-          "display": "SIDeR Test Practice"
-        }
+        ]
       }
     }
   ]

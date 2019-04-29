@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Patient?identifier=9449310106"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449310106",
       "resource": {
         "resourceType": "Patient",
         "id": "9449310106",
@@ -12,13 +19,21 @@
           "profile": [
             "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
           ],
-          "security" : [{
-            "system" : "http://hl7.org/fhir/ValueSet/v3-Confidentiality",
-            "code" : "R",
-            "display" : "restricted"
-          }]
+          "security": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/v3-Confidentiality",
+              "code": "R",
+              "display": "restricted"
+            }
+          ]
         },
+        "language": "English (Great Britain)",
         "identifier": [
+          {
+            "use": "usual",
+            "system": "https://fhir.nhs.uk/Id/local-patient-identifier",
+            "value": "999999994"
+          },
           {
             "extension": [
               {

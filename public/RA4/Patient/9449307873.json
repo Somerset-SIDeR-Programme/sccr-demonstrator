@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Patient?identifier=9449307873"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873",
       "resource": {
         "resourceType": "Patient",
         "id": "9449307873",
@@ -13,7 +20,31 @@
             "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
           ]
         },
+        "language": "English (Great Britain)",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Mr Meir <b>LIEBERMAN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>999999993</td></tr><tr><td>Address</td><td><span>1 Spinney Close </span><br/><span>Worcester Park </span></td></tr><tr><td>Date of birth</td><td><span>19 December 2005</span></td></tr></tbody></table></div>"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+                  "code": "Z",
+                  "display": "Not stated"
+                }
+              ]
+            }
+          }
+        ],
         "identifier": [
+          {
+            "use": "usual",
+            "system": "https://fhir.nhs.uk/Id/local-patient-identifier",
+            "value": "999999993"
+          },
           {
             "extension": [
               {
@@ -48,6 +79,7 @@
         ],
         "gender": "male",
         "birthDate": "2005-12-19",
+        "deceasedBoolean": false,
         "address": [
           {
             "use": "home",
@@ -59,11 +91,7 @@
             "district": "Surrey",
             "postalCode": "KT4 7BS"
           }
-        ],
-        "managingOrganization": {
-          "reference": "Organization/H81109",
-          "display": "SIDeR Test Practice"
-        }
+        ]
       }
     }
   ]

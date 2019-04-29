@@ -2,8 +2,15 @@
   "resourceType": "Bundle",
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://sider.ydh.nhs.uk/3_0_1/Patient?identifier=9449303789"
+    }
+  ],
   "entry": [
     {
+      "fullUrl": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789",
       "resource": {
         "resourceType": "Patient",
         "id": "9449303789",
@@ -13,7 +20,31 @@
             "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
           ]
         },
+        "language": "English (Great Britain)",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Ms Margeret <b>RHYS </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>999999991</td></tr><tr><td>Address</td><td><span>25 Imber Close </span><br/><span>Esher </span></td></tr><tr><td>Date of birth</td><td><span>13 October 1936</span></td></tr></tbody></table></div>"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+                  "code": "A",
+                  "display": "White British"
+                }
+              ]
+            }
+          }
+        ],
         "identifier": [
+          {
+            "use": "usual",
+            "system": "https://fhir.nhs.uk/Id/local-patient-identifier",
+            "value": "999999991"
+          },
           {
             "extension": [
               {
@@ -29,6 +60,7 @@
                 }
               }
             ],
+            "use": "official",
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9449303789"
           }
@@ -46,8 +78,16 @@
             ]
           }
         ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0800001066",
+            "use": "home"
+          }
+        ],
         "gender": "female",
         "birthDate": "1936-10-13",
+        "deceasedBoolean": false,
         "address": [
           {
             "use": "home",
@@ -60,12 +100,32 @@
             "postalCode": "KT10 8ED"
           }
         ],
-        "managingOrganization": {
-          "reference": "Organization/H81109",
-          "display": "SIDeR Test Practice"
-        }
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v2/0131",
+                    "code": "N",
+                    "display": "Next-of-kin"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "use": "usual",
+              "text": "Rhys James"
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "01935475122"
+              }
+            ]
+          }
+        ]
       }
     }
   ]
 }
-
