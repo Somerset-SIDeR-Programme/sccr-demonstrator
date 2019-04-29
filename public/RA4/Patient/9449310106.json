@@ -31,7 +31,7 @@
         "identifier": [
           {
             "use": "usual",
-            "system": "https://fhir.nhs.uk/Id/local-patient-identifier",
+            "system": "https://fhir.ydh.nhs.uk/Id/local-patient-identifier",
             "value": "999999994"
           },
           {
