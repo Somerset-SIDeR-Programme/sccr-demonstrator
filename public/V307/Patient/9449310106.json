@@ -1,0 +1,25 @@
+{
+	"resourceType": "Bundle",
+	"entry": [
+		{
+			"fullUrl": "http://hl7.org/fhir/patient/9449310106",
+			"resource": {
+				"resourceType": "Patient",
+				"name": [
+					{
+						"use": "official",
+						"family": "Demayo",
+						"given": [
+							"Cinco"
+						],
+						"prefix": [
+							"Mr"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "05/05/1974 00:00:00"
+			}
+		}
+	]
+}
