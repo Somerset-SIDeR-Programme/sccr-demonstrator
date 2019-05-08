@@ -1,0 +1,266 @@
+{
+  "resourceType": "Bundle",
+  "id": "509f21d2-090f-4cd9-940b-6f8b70f2131a",
+  "meta": {
+    "lastUpdated": "2019-04-17T12:23:30+11:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "fullUrl": "https://fhir.tst.nhs.uk/encounter/encounter1",
+      "resource": {
+        "resourceType": "Encounter",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "id": "483fb4cc-845f-4f7b-87ad-01d3435c616b",
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "325941000000100",
+                "display": "Face to face assessment"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-1",
+          "display": "Margaret Rhys"
+        },
+        "reason": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "63480004",
+                "display": "Chronic bronchitis"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2018-05-19",
+		  "end": "2018-05-19"
+        },
+        "serviceProvider": {
+          "reference": "Organization/RBA11",
+          "display": "Musgrove Park Hospital"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://fhir.tst.nhs.uk/encounter/encounter2",
+      "resource": {
+        "resourceType": "Encounter",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "id": "50ebb2e0-d840-461f-b90e-3bbb66f7dae2",
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "325941000000100",
+                "display": "Face to face assessment"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-2",
+          "display": "Margaret Rhys"
+        },
+        "reason": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "63480004",
+                "display": "Chronic bronchitis"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2018-09-18",
+		  "end": "2018-09-18"
+        },
+        "serviceProvider": {
+          "reference": "Organization/RBA11",
+          "display": "Musgrove Park Hospital"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://fhir.tst.nhs.uk/encounter/encounter3",
+      "resource": {
+        "resourceType": "Encounter",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+          ]
+        },
+        "id": "e92c3df2-24ee-4a97-ad4a-74b53f143883",
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "325941000000100",
+                "display": "Face to face assessment"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          },
+          "reference": "Patient/9449303789-3",
+          "display": "Margaret Rhys"
+        },
+        "reason": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "63480004",
+                "display": "Chronic bronchitis"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2018-02-15",
+		  "end": "2018-02-15"
+        },
+        "serviceProvider": {
+          "reference": "Organization/RBA11",
+          "display": "Musgrove Park Hospital"
+        }
+      }
+    },
+    {
+	  "fullUrl": "https://fhir.tst.nhs.uk/encounter/encounter4",
+      "resource": {
+      "resourceType": "Encounter",
+      "meta": {
+        "profile": [
+          "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+        ]
+      },
+      "id": "a4452636-1e28-425f-a88b-5472a2d63612",
+      "status": "finished",
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "325941000000100",
+              "display": "Face to face assessment"
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/nhs-number",
+          "value": "9449303789"
+        },
+        "reference": "Patient/9449303789-4",
+        "display": "Margaret Rhys"
+      },
+      "reason": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "46635009",
+              "display": "Diabetes mellitus type 1"
+            }
+          ]
+        }
+      ],
+      "period": {
+        "start": "2019-12-10",
+        "end": "2019-12-25"
+      },
+      "serviceProvider": {
+        "reference": "Organization/RBA11",
+        "display": "Musgrove Park Hospital"
+      }
+    }
+	},
+	{
+		  "fullUrl": "https://fhir.tst.nhs.uk/encounter/encounter5",
+      "resource": {
+  "resourceType": "Encounter",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+    ]
+  },
+  "id": "8c17ab6f-5d72-4412-aae7-7afd61c8b40b",
+  "status": "finished",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "325941000000100",
+          "display": "Face to face assessment"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449303789"
+    },
+    "reference": "Patient/9449303789-5",
+    "display": "Margaret Rhys"
+  },
+  "reason": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "263225007",
+          "display": "Fracture of proximal end of femur"
+        }
+      ]
+    }
+  ],
+  "period": {
+    "start": "2018-08-24",
+	"end": "2018-08-24"
+  },
+  "serviceProvider": {
+    "reference": "Organization/RBA11",
+    "display": "Musgrove Park Hospital"
+  }
+}
+}
+  ]
+}
