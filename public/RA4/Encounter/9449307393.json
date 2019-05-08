@@ -21,18 +21,16 @@
           ]
         },
         "status": "finished",
+        "class": {
+          "display": "outpatient"
+        },
         "type": [
           {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "440655000",
-                "display": "Outpatient environment"
-              },
-              {
-                "system": "http://snomed.info/sct",
-                "code": "394612005",
-                "display": "Urology"
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+                "code": "101",
+                "display": "UROLOGY"
               }
             ]
           }
@@ -58,13 +56,18 @@
           ]
         },
         "status": "finished",
+        "class": {
+          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
+          "code": "EMER",          
+          "display": "emergency"
+        },
         "type": [
           {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "225728007",
-                "display": "Accident and Emergency department"
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+                "code": "180",
+                "display": "ACCIDENT & EMERGENCY"
               }
             ]
           }
@@ -90,18 +93,18 @@
           ]
         },
         "status": "finished",
+        "class": {
+          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
+          "code": "IMP",
+          "display": "inpatient"
+        },
         "type": [
           {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "394778007",
-                "display": "Inpatient environment"
-              },
-              {
-                "system": "http://snomed.info/sct",
-                "code": "394612005",
-                "display": "Urology"
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+                "code": "101",
+                "display": "UROLOGY"
               }
             ]
           }

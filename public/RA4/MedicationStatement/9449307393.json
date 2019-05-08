@@ -42,7 +42,14 @@
               ]
             },
             "code": {
-              "text": "Salbutamol Inhaler"
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "display": "Easyhaler Salbutamol sulfate 100micrograms/dose dry powder inhaler (Orion Pharma (UK) Ltd) 200 dose",
+                  "code": "9205311000001107"
+                }
+              ],
+              "text": "EASYHALER SALBUTAMOL, dry powder inhaler,100micrograms/actuation,200 dose inhaler [1 X 200 dose inhaler]"
             }
           }
         ]
