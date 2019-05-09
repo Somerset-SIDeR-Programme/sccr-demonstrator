@@ -1,0 +1,56 @@
+{
+  "resourceType": "Bundle",
+  "id": "b65db9a8-ae2b-4453-b2ce-184b0590dc58",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "fullUrl": "https://fhir.tst.nhs.uk/Patient/734",
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Rhys",
+            "given": ["Margaret"],
+            "prefix": ["Ms"]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823 330330",
+            "use": "work",
+            
+          }
+        ]
+      }
+    }
+  ]
+}
