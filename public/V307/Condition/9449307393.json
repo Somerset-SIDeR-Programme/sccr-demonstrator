@@ -1,0 +1,35 @@
+{
+	"resourceType": "Bundle",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"clinicalStatus": "active",
+				"code": {
+					"text": "Do Not Contact Client"
+				},
+				"subject": {
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/nhs-number",
+						"value": "9449307393"
+					}
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"clinicalStatus": "active",
+				"code": {
+					"text": "Speech Impairment"
+				},
+				"subject": {
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/nhs-number",
+						"value": "9449307393"
+					}
+				}
+			}
+		}
+	]
+}
