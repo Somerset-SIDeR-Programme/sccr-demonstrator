@@ -1,0 +1,82 @@
+{
+  "resourceType": "Bundle",
+  "id": "3418b3ca-e263-439e-a2a6-37c225e0f2bf",
+  "type": "searchset",
+  "total": 2,
+  "entry": [
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/documentreference/9449303789-1",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "688b2665-d3a5-4664-a2a3-04c074ae77f5",
+        "meta": {
+          "profile": [
+          ],
+          "lastUpdated": "2018-07-01T13:11:33Z"
+        },
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "310854009",
+              "display": "Housing report"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "created": "2018-10-24",
+        "indexed": "2019-04-01T23:11:33+10:00",
+        "content": [
+          {
+            "attachment": {
+              "title": "Housing report"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://sider.sompar.nhs.uk/siderservice.svc/test/documentreference/9449303789-2",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "2dc224a4-7e02-4851-a55e-c93d01788012",
+        "meta": {
+          "profile": [
+          ],
+          "lastUpdated": "2018-09-11T13:11:33Z"
+        },
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "186065003",
+              "display": "Power of attorney medical report"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789"
+          }
+        },
+        "created": "2018-07-24",
+        "indexed": "2019-02-16T13:11:33+10:00",
+        "content": [
+          {
+            "attachment": {
+              "title": "Power of attorney medical report"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
