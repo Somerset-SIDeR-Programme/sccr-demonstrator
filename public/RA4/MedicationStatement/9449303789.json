@@ -22,15 +22,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/8"
+          "reference": "#8"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one in the morning"
-        },
+        "dosage": [
+          {
+            "text": "one in the morning"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -61,15 +63,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/9"
+          "reference": "#9"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one in the morning"
-        },
+        "dosage": [
+          {
+            "text": "one in the morning"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -100,15 +104,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/3"
+          "reference": "#3"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one in the morning"
-        },
+        "dosage": [
+          {
+            "text": "one in the morning"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -139,15 +145,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/10"
+          "reference": "#10"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one daily"
-        },
+        "dosage": [
+          {
+            "text": "one daily"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -178,15 +186,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/11"
+          "reference": "#11"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one daily"
-        },
+        "dosage": [
+          {
+            "text": "one daily"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -217,15 +227,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/12"
+          "reference": "#12"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one daily"
-        },
+        "dosage": [
+          {
+            "text": "one daily"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -256,15 +268,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/13"
+          "reference": "#13"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one twice daily"
-        },
+        "dosage": [
+          {
+            "text": "one twice daily"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -295,15 +309,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/14"
+          "reference": "#14"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "one daily"
-        },
+        "dosage": [
+          {
+            "text": "one daily"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -334,15 +350,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/15"
+          "reference": "#15"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "use as directed"
-        },
+        "dosage": [
+          {
+            "text": "use as directed"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -373,15 +391,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/16"
+          "reference": "#16"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449303789"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "once daily"
-        },
+        "dosage": [
+          {
+            "text": "once daily"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
