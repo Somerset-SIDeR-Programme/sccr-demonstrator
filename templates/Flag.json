@@ -1,0 +1,26 @@
+{
+  "resourceType": "Flag",
+  "meta": {
+    "profile": []
+  },
+  "status": "{{ active | inactive | entered-in-error }}",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "{{SCT_CODE}}",
+        "display": "{{SCT_RUBRIC}}"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "{{NHSNUMBER}}"
+    }
+  },
+  "period": {
+    "start": "{{START_DATE}}",
+    "end": "{{END_DATE}}"
+  }
+}
