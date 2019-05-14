@@ -22,9 +22,13 @@
         },
         "clinicalStatus": "active",
         "code": {
-           "system": "http://snomed.info/sct",
-        "code": "115329001",
-        "display": "MRSA"
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "115329001",
+              "display": "MRSA"
+            }
+          ]
         },
         "subject": {
           "reference": "https://fhir.tst.nhs.uk/3_0_1/Patient/9449303789",
@@ -48,9 +52,13 @@
         },
         "clinicalStatus": "active",
         "code": {
-        "system": "http://snomed.info/sct",
-        "code": "129839007",
-        "display": "At risk for falls"
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129839007",
+              "display": "At risk for falls"
+            }
+          ]
         },
         "subject": {
           "reference": "https://fhir.tst.nhs.uk/3_0_1/Patient/9449303789",
@@ -74,9 +82,13 @@
         },
         "clinicalStatus": "active",
         "code": {
-                 "system": "http://snomed.info/sct",
-        "code": "1095151000000107",
-        "display": "Has end of life advance care plan"
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1095151000000107",
+              "display": "Has end of life advance care plan"
+            }
+          ]
         },
         "subject": {
           "reference": "https://fhir.tst.nhs.uk/3_0_1/Patient/9449303789",
