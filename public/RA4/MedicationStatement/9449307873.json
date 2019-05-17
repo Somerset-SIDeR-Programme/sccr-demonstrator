@@ -22,22 +22,24 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/1"
+          "reference": "#1"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "dosage": {
-          "patientInstruction": "2puffs qds as required – max 8 puffs in 24hours",
-          "route": {
-            "text": "Inhalation via metered dose device"
-          },
-          "dose": {
-            "value": "1",
-            "unit": "dose(s)"
+        "dosage": [
+          {
+            "patientInstruction": "2puffs qds as required – max 8 puffs in 24hours",
+            "route": {
+              "text": "Inhalation via metered dose device"
+            },
+            "dose": {
+              "value": "1",
+              "unit": "dose(s)"
+            }
           }
-        },
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -75,15 +77,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/17"
+          "reference": "#17"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "1 four times daily if developing chest infection"
-        },
+        "dosage": [
+          {
+            "text": "1 four times daily if developing chest infection"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -114,15 +118,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/18"
+          "reference": "#18"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307873"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "2 capsules with breakfast and snacks, 4 with main meals"
-        },
+        "dosage": [
+          {
+            "text": "2 capsules with breakfast and snacks, 4 with main meals"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",

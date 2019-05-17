@@ -22,15 +22,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/1"
+          "reference": "#1"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "2puffs as required – max 8 puffs in 24hours"
-        },
+        "dosage": [
+          {
+            "text": "2puffs as required – max 8 puffs in 24hours"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
@@ -68,15 +70,17 @@
         },
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/2"
+          "reference": "#2"
         },
         "subject": {
           "reference": "https://sider.ydh.nhs.uk/3_0_1/Patient/9449307393"
         },
         "taken": "unk",
-        "dosage": {
-          "text": "1 puff od"
-        },
+        "dosage": [
+          {
+            "text": "1 puff od"
+          }
+        ],
         "contained": [
           {
             "resourceType": "Medication",
