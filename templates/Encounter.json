@@ -14,7 +14,8 @@
           "code": "{{SCT_CODE}}",
           "display": "{{SCT_RUBRIC}}"
         }
-      ]
+      ],
+      "text": "{{TYPE_AS_TEXT}}"
     }
   ],
   "subject": {

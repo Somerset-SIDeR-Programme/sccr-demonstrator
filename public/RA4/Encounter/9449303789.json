@@ -22,9 +22,8 @@
         },
         "status": "finished",
         "class": {
-          "display": "outpatient"
+          "text": "outpatient"
         },
-
         "type": [
           {
             "coding": [
@@ -57,9 +56,13 @@
         },
         "status": "finished",
         "class": {
-          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
-          "code": "IMP",
-          "display": "inpatient"
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActEncounterCode",
+              "code": "IMP",
+              "display": "inpatient"
+            }
+          ]
         },
         "type": [
           {
@@ -94,9 +97,13 @@
         },
         "status": "finished",
         "class": {
-          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
-          "code": "EMER",
-          "display": "emergency"
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActEncounterCode",
+              "code": "EMER",
+              "display": "emergency"
+            }
+          ]
         },
         "type": [
           {
@@ -131,7 +138,7 @@
         },
         "status": "finished",
         "class": {
-          "display": "outpatient"
+          "text": "outpatient"
         },
         "type": [
           {
