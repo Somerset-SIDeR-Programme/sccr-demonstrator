@@ -22,7 +22,7 @@
         },
         "status": "finished",
         "class": {
-          "text": "outpatient"
+          "display": "outpatient"
         },
         "type": [
           {
@@ -56,13 +56,9 @@
         },
         "status": "finished",
         "class": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/v3/ActEncounterCode",
-              "code": "IMP",
-              "display": "inpatient"
-            }
-          ]
+          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
+          "code": "IMP",
+          "display": "inpatient"
         },
         "type": [
           {
@@ -97,32 +93,28 @@
         },
         "status": "finished",
         "class": {
+          "system": "http://hl7.org/fhir/v3/ActEncounterCode",
+          "code": "EMER",
+          "display": "emergency"
+        }
+      },
+      "type": [
+        {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/ActEncounterCode",
-              "code": "EMER",
-              "display": "emergency"
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+              "code": "180",
+              "display": "ACCIDENT & EMERGENCY"
             }
           ]
-        },
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
-                "code": "180",
-                "display": "ACCIDENT & EMERGENCY"
-              }
-            ]
-          }
-        ],
-        "subject": {
-          "reference": "https://sider.ydh.nhs.uk/3_0_1/patient/9449303789"
-        },
-        "period": {
-          "start": "2019-02-22T08:30:00",
-          "end": "2019-02-22T10:09:53"
         }
+      ],
+      "subject": {
+        "reference": "https://sider.ydh.nhs.uk/3_0_1/patient/9449303789"
+      },
+      "period": {
+        "start": "2019-02-22T08:30:00",
+        "end": "2019-02-22T10:09:53"
       }
     },
     {
@@ -138,7 +130,7 @@
         },
         "status": "finished",
         "class": {
-          "text": "outpatient"
+          "display": "outpatient"
         },
         "type": [
           {
