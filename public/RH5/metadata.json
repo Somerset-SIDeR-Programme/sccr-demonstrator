@@ -15,7 +15,7 @@
     "description": "SomPar test data"
   },
   "fhirVersion": "3.0.1-11917",
-  "acceptUnknown": false,
+  "acceptUnknown": "no",
   "format": [
     "json"
   ],
