@@ -8,8 +8,8 @@
   "description": "FHIR interface to SIDeR CareConnect services",
   "copyright": "© 2016+ Black Pear Software Limited",
   "software": {
-    "name": "blackpear.spine.proxy",
-    "version": "1.0.6"
+    "name": "sccr-demonstrator",
+    "version": "0.0.6"
   },
   "implementation": {
     "description": "SIDeR CareConnect for SIDeR SCR PoC"
