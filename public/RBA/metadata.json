@@ -15,7 +15,7 @@
     "description": "Taunton and Somerset NHS Trust"
   },
   "fhirVersion": "3.0.1-11917",
-  "acceptUnknown": false,
+  "acceptUnknown": "no",
   "format": [
     "json"
   ],

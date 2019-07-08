@@ -1,0 +1,69 @@
+version: 0.2
+
+env:
+  parameter-store:
+    NPM_TOKEN: "/blackpear-cd/npm_token"
+    EBX_VPCID: "/blackpear-cd/appcloud/default/VPCId"
+    EBX_ELBSUBNETS: "/blackpear-cd/appcloud/default/ELBSubnets"
+    EBX_SUBNETS: "/blackpear-cd/appcloud/default/Subnets"
+    EBX_SSLCERT: "/blackpear-cd/appcloud/default/SSLCertificateArns"
+    EBX_NOTIFICATIONTOPICARN: "/blackpear-cd/appcloud/default/NotificationTopicARN"
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+
+    commands:
+      # Upgrade PIP to the latest version
+      - pip install --upgrade pip
+
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli
+
+      # Enable access to Black Pear organisation on NPM
+      - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+
+  pre_build:
+    commands:
+      # Install dependencies needed for running tests
+      - npm install
+
+      # Discover and run unit tests
+      - npm test
+
+  build:
+    commands:
+      # deploy .ebextensions
+      - mkdir -p .ebextensions
+      - cp ./node_modules/@blackpear/cd-eb/.ebextensions/*.config .ebextensions/
+
+      # create local.config
+      - echo "option_settings:" > .ebextensions/local.config
+      - echo "  aws:ec2:vpc:" >> .ebextensions/local.config
+      - echo -n "    VPCId:" >> .ebextensions/local.config
+      - echo " $EBX_VPCID" >> .ebextensions/local.config
+      - echo -n "    ELBSubnets:" >> .ebextensions/local.config
+      - echo " $EBX_ELBSUBNETS" >> .ebextensions/local.config
+      - echo -n "    Subnets:" >> .ebextensions/local.config
+      - echo " $EBX_SUBNETS" >> .ebextensions/local.config
+      - echo "  aws:elbv2:listener:443:" >> .ebextensions/local.config
+      - echo -n "    SSLCertificateArns:" >> .ebextensions/local.config
+      - echo " $EBX_SSLCERT" >> .ebextensions/local.config
+      - echo "  aws:elasticbeanstalk:sns:topics:" >> .ebextensions/local.config
+      - echo -n "    Notification Topic ARN:" >> .ebextensions/local.config
+      - echo " $EBX_NOTIFICATIONTOPICARN" >> .ebextensions/local.config
+
+      # create npm.config
+      - echo "files:" > .ebextensions/npm.config
+      - echo "  \"/tmp/.npmrc\":" >> .ebextensions/npm.config
+      - echo -n "    content:" >> .ebextensions/npm.config
+      - echo " |" >> .ebextensions/npm.config
+      - echo "      //registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .ebextensions/npm.config
+
+      # remove node_modules
+      - rm -r node_modules
+
+artifacts:
+  files:
+    - '**/*'
