@@ -5,5 +5,10 @@
   },
   "logging": {
     "level": "info"
+  },
+  "auth": {
+    "apikey": {
+      "header": "x-api-key"
+    }
   }
 }
