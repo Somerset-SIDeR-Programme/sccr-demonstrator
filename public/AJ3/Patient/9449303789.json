@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "lastupdated": "16-12-2019T15:04:52+00:00"
+  },
+  "type": "searchset",
+  "id": "05A918C7-D8FE-4CFB-8E80-6C1A0C282ED5",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449303789",
+            "extension": [
+              {
+                "valueCodableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "display": "NHS VALIDATION",
+                      "code": "VALIDATIONCODE"
+                    }
+                  ]
+                },
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1"
+              }
+            ]
+          }
+        ],
+        "id": "1",
+        "resourceType": "Patient",
+        "birthDate": "1936-10-13",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "use": "mobile",
+                "value": "07758927204"
+              }
+            ],
+            "name": {
+              "family": "RHYS",
+              "use": "official",
+              "given": [
+                "Dave"
+              ]
+            }
+          }
+        ],
+        "name": [
+          {
+            "family": "RYHS",
+            "use": "official",
+            "given": [
+              "Margaret"
+            ]
+          }
+        ]
+      },
+      "fullurl": "19F8C243-DFF2-4103-8956-DA1AC2E9AF90"
+    }
+  ],
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://crosscare.test.nhs.uk/STU3/Patient?_format=json&_id=1&_pretty=true"
+    }
+  ],
+  "total": 1
+}
