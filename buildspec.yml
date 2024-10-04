@@ -8,11 +8,19 @@ env:
     EBX_SUBNETS: "/blackpear-cd/appcloud/default/Subnets"
     EBX_SSLCERT: "/blackpear-cd/appcloud/default/SSLCertificateArns"
     EBX_NOTIFICATIONTOPICARN: "/blackpear-cd/appcloud/default/NotificationTopicARN"
+    EBX_TOPICARN_P1FAULT: "/blackpear-cd/appcloud/default/TopicARN/P1Fault"
+    EBX_TOPICARN_P2FAULT: "/blackpear-cd/appcloud/default/TopicARN/P2Fault"
+    EBX_TOPICARN_P3FAULT: "/blackpear-cd/appcloud/default/TopicARN/P3Fault"
+    EBX_TOPICARN_P4FAULT: "/blackpear-cd/appcloud/default/TopicARN/P4Fault"
+    EBX_TOPICARN_P5FAULT: "/blackpear-cd/appcloud/default/TopicARN/P5Fault"
+    EBX_TOPICARN_WARNING: "/blackpear-cd/appcloud/default/TopicARN/Warning"
+    EBX_TOPICARN_INFORMATION: "/blackpear-cd/appcloud/default/TopicARN/Information"
+    EBX_TOPICARN_SECURITY: "/blackpear-cd/appcloud/default/TopicARN/Security"
 
 phases:
   install:
     runtime-versions:
-      nodejs: 10
+      nodejs: 20
 
     commands:
       # Upgrade PIP to the latest version
@@ -26,8 +34,40 @@ phases:
 
   pre_build:
     commands:
+      # Install postgres if required for testing
+      - |
+        apt-get update -y;
+
+        echo "Mongo required: ${INSTALL_TEST_MONGO}";
+        if expr "${INSTALL_TEST_MONGO}" = "true" >/dev/null; then
+          wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb;
+          sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+        fi
+
+        echo "Postgres required: ${INSTALL_TEST_POSTGRES}";
+        if expr "${INSTALL_TEST_POSTGRES}" = "true" >/dev/null; then
+          apt-get install postgresql postgresql-contrib -y;
+          service postgresql start;
+
+          PG_CONFIG_FILE=$(ps -ef | grep postgres | sed -n '/-D /p' | sed -e 's/.*config_file=\([^ ]*\).*/\1/');
+
+          PG_HBA_FILE=$(grep "hba_file" $PG_CONFIG_FILE | sed -e "s/.*'\([^ ]*\)'.*/\1/");
+
+          sed -i -e 's/peer/trust/g' $PG_HBA_FILE;
+          sed -i -e 's/md5/trust/g' $PG_HBA_FILE;
+
+          service postgresql restart;
+
+          if expr "${TEST_POSTGRES_USERNAME}" != "postgres" >/dev/null; then
+            createuser -U -w postgres $TEST_POSTGRES_USERNAME;
+          fi
+
+          psql -U postgres -c "ALTER USER postgres WITH PASSWORD 'postgres'";
+          createdb -U postgres -w -O $TEST_POSTGRES_USERNAME $TEST_POSTGRES_DB_NAME;
+        fi
+
       # Install dependencies needed for running tests
-      - npm install
+      - npm ci
 
       # Discover and run unit tests
       - npm test
@@ -37,6 +77,9 @@ phases:
       # deploy .ebextensions
       - mkdir -p .ebextensions
       - cp ./node_modules/@blackpear/cd-eb/.ebextensions/*.config .ebextensions/
+
+      #deploy Procfile
+      - cp ./node_modules/@blackpear/cd-eb/eb-Procfile Procfile
 
       # create local.config
       - echo "option_settings:" > .ebextensions/local.config
@@ -54,9 +97,32 @@ phases:
       - echo -n "    Notification Topic ARN:" >> .ebextensions/local.config
       - echo " $EBX_NOTIFICATIONTOPICARN" >> .ebextensions/local.config
 
+      # SNS notification topic ARNs in local.config
+      - echo "  aws:elasticbeanstalk:customoption:" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_P1FAULT:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_P1FAULT" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_P2FAULT:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_P2FAULT" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_P3FAULT:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_P3FAULT" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_P4FAULT:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_P4FAULT" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_P5FAULT:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_P5FAULT" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_WARNING:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_WARNING" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_INFORMATION:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_INFORMATION" >> .ebextensions/local.config
+      - echo -n "    EBX_TOPICARN_SECURITY:" >> .ebextensions/local.config
+      - echo " $EBX_TOPICARN_SECURITY" >> .ebextensions/local.config
+
       # create npm.config
       - echo "files:" > .ebextensions/npm.config
-      - echo "  \"/tmp/.npmrc\":" >> .ebextensions/npm.config
+      - echo "  \"/root/.npmrc\":" >> .ebextensions/npm.config
+      - echo -n "    content:" >> .ebextensions/npm.config
+      - echo " |" >> .ebextensions/npm.config
+      - echo "      //registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .ebextensions/npm.config
+      - echo "  \"/home/webapp/.npmrc\":" >> .ebextensions/npm.config
       - echo -n "    content:" >> .ebextensions/npm.config
       - echo " |" >> .ebextensions/npm.config
       - echo "      //registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .ebextensions/npm.config

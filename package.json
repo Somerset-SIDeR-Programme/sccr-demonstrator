@@ -2,10 +2,11 @@
   "name": "sider-scr-demo",
   "version": "0.0.8",
   "scripts": {
-    "start": "node api"
+    "start": "node api",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@blackpear/cd-eb": "0.0.8",
+    "@blackpear/cd-eb": "2.0.2",
     "config": "^3.3.1",
     "express": "^4.17.1"
   }
