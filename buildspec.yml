@@ -36,8 +36,6 @@ phases:
     commands:
       # Install postgres if required for testing
       - |
-        apt-get update -y;
-
         echo "Mongo required: ${INSTALL_TEST_MONGO}";
         if expr "${INSTALL_TEST_MONGO}" = "true" >/dev/null; then
           wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb;
@@ -46,6 +44,7 @@ phases:
 
         echo "Postgres required: ${INSTALL_TEST_POSTGRES}";
         if expr "${INSTALL_TEST_POSTGRES}" = "true" >/dev/null; then
+          apt-get update -y;
           apt-get install postgresql postgresql-contrib -y;
           service postgresql start;
 
@@ -81,6 +80,12 @@ phases:
       #deploy Procfile
       - cp ./node_modules/@blackpear/cd-eb/eb-Procfile Procfile
 
+      # deploy platform hooks for dynamic NPM token fetch
+      - mkdir -p .platform/hooks/prebuild .platform/confighooks/prebuild
+      - cp ./node_modules/@blackpear/cd-eb/fetch-npm-token.sh .platform/hooks/prebuild/01_fetch_npm_token.sh
+      - cp ./node_modules/@blackpear/cd-eb/fetch-npm-token.sh .platform/confighooks/prebuild/01_fetch_npm_token.sh
+      - chmod +x .platform/hooks/prebuild/01_fetch_npm_token.sh .platform/confighooks/prebuild/01_fetch_npm_token.sh
+
       # create local.config
       - echo "option_settings:" > .ebextensions/local.config
       - echo "  aws:ec2:vpc:" >> .ebextensions/local.config
@@ -115,17 +120,6 @@ phases:
       - echo " $EBX_TOPICARN_INFORMATION" >> .ebextensions/local.config
       - echo -n "    EBX_TOPICARN_SECURITY:" >> .ebextensions/local.config
       - echo " $EBX_TOPICARN_SECURITY" >> .ebextensions/local.config
-
-      # create npm.config
-      - echo "files:" > .ebextensions/npm.config
-      - echo "  \"/root/.npmrc\":" >> .ebextensions/npm.config
-      - echo -n "    content:" >> .ebextensions/npm.config
-      - echo " |" >> .ebextensions/npm.config
-      - echo "      //registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .ebextensions/npm.config
-      - echo "  \"/home/webapp/.npmrc\":" >> .ebextensions/npm.config
-      - echo -n "    content:" >> .ebextensions/npm.config
-      - echo " |" >> .ebextensions/npm.config
-      - echo "      //registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .ebextensions/npm.config
 
       # remove node_modules
       - rm -r node_modules

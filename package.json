@@ -6,8 +6,10 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@blackpear/cd-eb": "2.0.2",
     "config": "^3.3.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@blackpear/cd-eb": "^3.1.1"
   }
 }
